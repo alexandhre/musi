@@ -1,0 +1,84 @@
+html,body {
+  font-family: 'Open Sans', serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+.hero.is-success {
+  background: #ffffff;
+}
+.hero .nav, .hero.is-success .nav {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.box {
+  margin-top: 5rem;
+}
+.avatar {
+  
+  padding-bottom: 20px;
+}
+.avatar img {
+  
+}
+input {
+  font-weight: 300;
+}
+p {
+  font-weight: 700;
+}
+p.subtitle {
+  padding-top: 1rem;
+}
+
+ .btn_facebook { 
+  
+  font-size: 1rem;
+  -webkit-border-radius: 10px;
+  -moz-border-radius:10px;
+  -ms-border-radius:10px;
+  border-radius: 10px;
+  display: flex;
+  border: 0;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+
+  height: 45px;
+  margin-bottom: 10px;
+  background: #24599b; }
+ 
+ .btn_facebook i {
+	padding:5px;
+  }
+
+.btn_google {
+   font-size: 1rem;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  height: 45px;
+  margin-bottom: 10px;
+  background-color: #fa3a2f; }
+  
+ .btn_google i {
+   	padding:5px;}
+
+
+/********************** Novas variaveis *****************************************/
+.has-text-dark-blue {
+	color:#444c72 !important;
+}
+ 
+.has-text-new-grey{
+ color:#9b9b9b !important;
+}
+
+.link{
+	
+	text-decoration: underline;
+}

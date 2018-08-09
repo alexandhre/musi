@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MUSICLOUD</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="screen" />
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <!-- Bulma Version 0.7.1-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/login.css">	
+	<link rel="stylesheet" type="text/css" href="sass/extensions/bulma-divider.min.css">
+    <link rel="stylesheet" href="src/css-spacing.css">
+</head>
+
+<body>
+    <section class="hero is-success is-fullheight">
+      
+		<div class="hero-body">
+            <div class="container has-text-centered">
+                <div class="column is-6 is-offset-3">
+					 <figure class="avatar">
+                       <img src="img/logo_musi_2.png" alt="logo">
+                      </figure>
+                      <h3 class="title has-text-new-grey">Junte-se a nossa comunidade!</h3>
+						<div class="is-12">                       
+							<form>
+								<div class="field is-grouped is-grouped-centered">
+								  <p class="control">
+									<a class=" btn_facebook button">
+									 <i class="fa fa-facebook fa-2x " aria-hidden="true"></i> Facebook
+									</a>
+								  </p>
+								  <p class="control">
+									<a class=" btn_google button">
+									 <i class="fa fa-google fa-2x " aria-hidden="true"></i> Google
+									</a>
+								  </p>
+								</div>
+								<div class="column is-6 is-offset-3"><div class="is-divider" data-content="O" ></div></div>
+
+								 <h3 class="subtitle has-text-dark-blue has-text-weight-bold is-size-5">Cadastre-se grátis</h3>
+								<div class="field">
+									<div class="control">
+										<input class="input is-medium" type="text" placeholder="Nome do usuário" autofocus="">
+									</div>
+								</div>
+					            <div class="field">
+									<div class="control">
+										<input class="input is-medium" type="email" placeholder="Email" autofocus="">
+									</div>
+								</div>
+
+								<div class="field ">
+									<div class="control">
+										<input class="input is-medium" type="password" placeholder="Senha">					 
+									</div>
+								</div>
+								<div class="field has-text-left  has-text-dark-blue has-text-weight-semibold">
+									<label class="checkbox ">
+									   <input type="checkbox">
+										 Aceito o <a href="#" data-target="modalTermo" class="link">Termo de uso.</a> 
+									  </label>
+							      </div>
+								 
+								<div class="field has-text-left  has-text-dark-blue has-text-weight-semibold">
+									<label class="checkbox ">
+									   <input type="checkbox">
+										  Quero receber todas as novidades do Musi. 
+									  </label>
+							      </div>
+								<div class="field is-grouped is-grouped-centered mtl">
+									<button class="button is-block is-link is-large is-rounded">Concluir</button>
+								</div>							
+							</form>
+							  <div class="column is-6 is-offset-3"><div class="is-divider" data-content="O" ></div></div>
+						</div>
+                        <div class="field has-text-centered is-size-5">						  
+                        <label class="has-text-dark-blue ">
+						  Você já tem uma conta em MUSI?
+							<a class="link has-text-dark-blue has-text-weight-semibold "  href="login.html">Iniciar sessão</a>
+               			 </label>
+                       </div>
+                </div>
+            </div>
+        </div>
+		 <div class="modal" id="modalTermo">
+		  <div class="modal-background"></div>
+		  <div class="modal-card">
+			<header class="modal-card-head">
+			  <p class="modal-card-title">Termo de Uso</p>
+			  <button class="delete" aria-label="close"></button>
+			</header>
+			<section class="modal-card-body">
+			  <!-- Content ... -->
+			</section>
+			<footer class="modal-card-foot">
+			  <button class="button is-success">Save changes</button>
+			  <button class="button">Voltar</button>
+			</footer>
+		  </div>
+		</div>
+    </section>
+	
+	<script>
+	   window.onload = () => {
+	   document.querySelectorAll('[data-target]').forEach((result)=>{
+		  result.onclick = () => {
+			let modal = document.getElementById(result.getAttribute('data-target'))
+			  modal.classList.toggle("is-active")
+			  modal.querySelector('.delete').onclick = () => { modal.classList.toggle("is-active") }
+		  }
+	  })
+	}
+	</script>
+</body>
+</html>
