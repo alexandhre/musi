@@ -1,4 +1,11 @@
+Dicas para baixar o código fonte:
 
+O código da Aula 02 vem com o projeto completo com a pasta vendor
+basta rodar o comando... php artisan serve ...
+Os demais fontes vão estar sem a pasta vendor do Composer e a pasta de módulos do Node JS
+Assim ... antes de rodar o projeto vc deve rodar:
+composer update - para criar a pasta vendor
+npm install - para criar a pasta de módulos do node js
 
 .........
 
